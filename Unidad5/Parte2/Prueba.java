@@ -6,6 +6,9 @@ class Prueba{
         alumnos.add("Juan");
         alumnos.add("Pepe");
         alumnos.add("Marta");
+        alumnos.add("Homero");
+        alumnos.add("Bart");
+        alumnos.add("Sr Burns");
 
         for (String alumno: alumnos) {
             System.out.println(alumno);
