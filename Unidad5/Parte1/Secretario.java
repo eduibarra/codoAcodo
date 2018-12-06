@@ -4,7 +4,7 @@ public class Secretario extends Empleado {
     private final Float aumento = 0.05;
 
     public Secretario(boolean despacho, String fax){
-        super(nom, ape, dni, dir, tel, sal);
+        super(nom, ape, doc, dir, tel, sal);
         this.despacho = despacho;
         this.fax = fax;
     }
