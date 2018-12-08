@@ -50,6 +50,13 @@ nb-configuration.xml
 build.xml
 manifest.mf
 
+# vscode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.yml
 
 # OS
 .DS_Store
