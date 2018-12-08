@@ -1,6 +1,7 @@
 public class Empleado {
 
-    private String nombre, apellido, dni;
+    private String nombre, apellido;
+    private String dni;
 	private String direccion;
 	private String telefono;
     private double salario;
@@ -33,6 +34,15 @@ public class Empleado {
 
     public void setAntiguedad(int antiguedad) {
         this.antiguedad = antiguedad;
+    }
+
+    public String toString(){
+        return "Secretario {" + " Nombre: " + nombre
+                              + " Apellido: " + apellido
+                              + " Documento: " + dni
+                              + " Direccion: " + direccion
+                              + " Telefono: " + telefono
+                              + " Salario: " + salario + "}";
     }
 
 }

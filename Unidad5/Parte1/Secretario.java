@@ -3,8 +3,8 @@ public class Secretario extends Empleado {
     private String fax;
     private final Float aumento = 0.05;
 
-    public Secretario(boolean despacho, String fax){
-        super(nom, ape, doc, dir, tel, sal);
+    public Secretario(String nom, String ape, String dni, String dir, String tel, double sal, boolean despacho, String fax){
+        super(nom, ape, dni, dir, tel, sal);
         this.despacho = despacho;
         this.fax = fax;
     }
@@ -15,6 +15,13 @@ public class Secretario extends Empleado {
 
     public void puesto() {
         
+    }
+
+    @Override
+    public String toString(){
+        return "Secretario: " + super.toString() 
+                              + " Despacho: " + despacho
+                              + " FAX: " + fax + "}";
     }
     
 }
