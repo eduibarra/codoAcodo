@@ -2,6 +2,16 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Ejercicio2",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "Ejercicio2",
+            "args": ""
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Prueba",
             "request": "launch",
             "cwd": "${workspaceFolder}",
