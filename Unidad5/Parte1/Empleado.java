@@ -1,48 +1,38 @@
-public class Empleado {
+public abstract class Empleado {
 
-    private String nombre, apellido;
-    private String dni;
-	private String direccion;
-	private String telefono;
     private double salario;
+    private String nombre;
+    private String apellido;
+    private String dni;
+    private String direccion;
+    private String telefono;
     private int antiguedad;
+    private Empleado supervisor;
 
-    public Empleado(String nom, String ape, String dni, String dir, String tel, double sal){
-        this.nombre = nom;
-        this.apellido = ape;
+    // Constructor con parametros
+    public Empleado(String nombre, String apellido, String dni, String direccion, String telefono, double salario){
+        this.nombre = nombre;
+        this.apellido = apellido;
         this.dni = dni;
-        this.direccion = dir;
-        this.telefono = tel;
-        this.salario = sal;
+        this.direccion = direccion;
+        this.telefono = telefono;
+        this.salario = salario;
     }
 
-    public void mostrar_datos(){
+    public abstract void incremetarSalario();
 
+    public void cambiarSupervisor(Empleado sup){
+        this.supervisor = sup;
     }
 
-    public void cambiar_supervisor() {
-        
-    }
-
-    public float incrementar_salario(float porcentaje, float salario){
-        return salario + (salario + porcentaje);
-    }
-
-    public int getAntiguedad() {
-        return antiguedad;
-    }
-
-    public void setAntiguedad(int antiguedad) {
-        this.antiguedad = antiguedad;
-    }
-
+    @Override
     public String toString(){
-        return "Secretario {" + " Nombre: " + nombre
-                              + " Apellido: " + apellido
-                              + " Documento: " + dni
-                              + " Direccion: " + direccion
-                              + " Telefono: " + telefono
-                              + " Salario: " + salario + "}";
+        return "Nombre: " + nombre
+                + " Apellido: " + apellido
+                + " Documento: " + dni
+                + " Direccion: " + direccion
+                + " Telefono: " + telefono
+                + " Salario: " + salario;
     }
 
 }

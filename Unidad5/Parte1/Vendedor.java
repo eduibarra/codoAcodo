@@ -1,23 +1,31 @@
 public class Vendedor extends Empleado{
+    private Auto auto;
     private String telefono_movil;
     private String area_de_venta;
-    private float comision;
-    private final float aumento = 0.1;
+    private double comision;
     
-    public Vendedor(String nom, String ape, String dni, String dir, String tel, double sal, String tel_movil, String area_venta, float comision){
-        super(nom, ape, dni, dir, tel, sal);
-        this.telefono_movil = tel_movil;
-        this. area_de_venta = area_venta;
+    public Vendedor(String nombre, String apellido, String dni, String direccion, String telefono, double salario, String telefono_movil, String area_de_venta, double comision){
+        super(nombre, apellido, dni, direccion, telefono, salario);
+        this.telefono_movil = telefono_movil;
+        this. area_de_venta = area_de_venta;
         this.comision = comision;
     }
 
-    public void cambiar_coche(){}
+    public void cambiar_auto(Auto auto){
+        this.auto = auto;
+    }
+
+    @Override
+    public void incremetarSalario() {
+        salario = salario * 1.10;
+    }
 
     @Override
     public String toString(){
         return "Vendedor: " + super.toString() 
-                              + " Telefono Movil: " + telefono_movil
-                              + " Area de venta: " + area_de_venta
-                              + " Comision: " + comision + "}";
+                            + " Auto: " + auto
+                            + " Telefono Movil: " + telefono_movil
+                            + " Area de venta: " + area_de_venta
+                            + " Comision: " + comision + "}";
     }
 }
