@@ -25,11 +25,11 @@ public class JefeZona extends Empleado {
     }
 
     public void agregarVendedor(Vendedor vendedor){
-        vendedor.add(vendedor);
+        vendedores.add(vendedor);
     }
 
     public void eliminarVendedor(Vendedor vendedor){
-        vendedor.remove(vendedor);
+        vendedores.remove(vendedor);
     }
 
     @Override

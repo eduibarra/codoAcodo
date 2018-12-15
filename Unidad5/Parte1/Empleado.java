@@ -1,6 +1,6 @@
 public abstract class Empleado {
 
-    private double salario;
+    protected double salario;
     private String nombre;
     private String apellido;
     private String dni;
@@ -29,10 +29,10 @@ public abstract class Empleado {
     public String toString(){
         return "Nombre: " + nombre
                 + " Apellido: " + apellido
-                + " Documento: " + dni
+                + " \nDocumento: " + dni
                 + " Direccion: " + direccion
                 + " Telefono: " + telefono
-                + " Salario: " + salario;
+                + " \nSalario: " + salario;
     }
 
 }

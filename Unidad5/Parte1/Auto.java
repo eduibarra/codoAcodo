@@ -12,8 +12,8 @@ public class Auto {
 
     @Override
     public String toString() {
-        return "Auto:  Marca: '" + getMarca() + "'" +
-            ", Modelo: '" + getModelo() + "'" +
-            ", Matricula: '" + getMatricula();
+        return "Auto:  Marca: '" + marca + "'" +
+            ", Modelo: '" + modelo + "'" +
+            ", Matricula: '" + matricula;
     }
 }
