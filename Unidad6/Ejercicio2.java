@@ -4,7 +4,7 @@ public class Ejercicio2 {
     public static float division;
     public static int numerador = 10;
     public static String denominador = "M";
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         System.out.println("+++++++++++++++++ Antes de hacer la division +++++++++++++++");
         try {
             int n = Integer.parseInt(denominador);
